@@ -19,7 +19,7 @@
           name="firstName"
           #clientFirstName="ngModel"
           [ngClass]="{ 'is-invalid': clientFirstName.errors && clientFirstName.touched }"
-          [(ngModel)]="firstName"
+          [(ngModel)]="client.firstName"
           minlength="2"
           required />
 
@@ -39,7 +39,7 @@
           name="lastName"
           #clientLastName="ngModel"
           [ngClass]="{ 'is-invalid': clientLastName.errors && clientLastName.touched }"
-          [(ngModel)]="lastName"
+          [(ngModel)]="client.lastName"
           minlength="2"
           required />
 
@@ -59,7 +59,7 @@
           name="email"
           #clientEmail="ngModel"
           [ngClass]="{ 'is-invalid': clientEmail.errors && clientEmail.touched }"
-          [(ngModel)]="email"
+          [(ngModel)]="client.email"
           pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
           required />
 
