@@ -27,7 +27,7 @@ export class AuthService {
 
   register(email: string, password: string) {
     return new Promise((res, rej) => {
-      this.afauth.auth.signInWithEmailAndPassword(email, password)
+      this.afauth.auth.createUserWithEmailAndPassword(email, password)
         .then(userData => res(userData))
         .catch(err => rej(err));
     });
